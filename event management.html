@@ -3,82 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Events</title>
+    <title>Upcoming Events 📆</title>
     <link rel="icon" href="img/date.png">
-    <style>
-        body {
-            background-color: black;
-            color: beige;
-            font-family: Arial, sans-serif;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        p {
-            text-align: justify;
-            padding: 20px;
-        }
-        img {
-            width: 80%;
-            height: auto;
-        }
-        .event {
-            margin-bottom: 50px;
-        }
-        .event img {
-            width: 60%;
-            margin: 10px;
-        }
-        hr {
-            border: 1px solid beige;
-        }
-        .contact {
-            text-align: center;
-            font-size: 1.2em;
-        }
-        .event-title {
-            font-size: 1.5em;
-            text-align: center;
-        }
-        .event-description {
-            text-align: center;
-            font-size: 1.1em;
-        }
-        .link {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-        <h1>Upcoming Events 📆</h1>
-        <p>Don't miss any of your important events. Here are the events you have registered for:</p>
-    </center>
-    <hr>
 
-    <!-- Event Gallery -->
-    <div class="event">
-        <h1>Photo Gallery Event</h1>
-        <img src="img/event1.png" alt="Photo Gallery Event">
-        <h2>Free Entry | Free Food | Pets Are Not Allowed</h2>
-        <p>A photo event gallery is a curated collection of images capturing key moments and highlights of an event...</p>
+    <h1>Upcoming Events 📆</h1>
+    <p>Don't miss any of your important events. Here are the events you have registered for:</p>
+
+    <div class="events-container" id="events-container">
+        <!-- Events will be dynamically injected here -->
     </div>
 
-    <!-- Fashion Store -->
-    <div class="event">
-        <img src="img/event2.png" alt="Fashion Store">
-        <h1><a href="https://www.myntra.com/" target="_blank">Fashion Store</a></h1>
-        <h2>Free Entry | Free Food | Pets Are Not Allowed</h2>
-        <p>A fashion store offers trendy clothing, accessories, and footwear to cater to diverse styles and preferences...</p>
+    <!-- Modal for event details -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <img id="modalImage" src="" alt="Event Image" style="width: 100%; height: auto; margin-top: 15px;">
+        </div>
     </div>
 
-    <hr>
-
-    <!-- Contact Information -->
     <div class="contact">
         <h1>Contact</h1>
         <h2>+91 8825655110 | +91 99436352199</h2>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
