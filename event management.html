@@ -1,44 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Events</title>
-        <link rel="icon" href="img/date.png">
-    </head>
-    <body bgcolor="black" style="color:beige;">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="icon" href="img/date.png">
+    <style>
+        body {
+            background-color: black;
+            color: beige;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            padding: 20px;
+        }
+        img {
+            width: 80%;
+            height: auto;
+        }
+        .event {
+            margin-bottom: 50px;
+        }
+        .event img {
+            width: 60%;
+            margin: 10px;
+        }
+        hr {
+            border: 1px solid beige;
+        }
+        .contact {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .event-title {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .event-description {
+            text-align: center;
+            font-size: 1.1em;
+        }
+        .link {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
     <center>
-        <h1>Upcoming Events📆</h1>
-        <p>Dont miss any of your important events.here are the important events u registred for.</p>
+        <h1>Upcoming Events 📆</h1>
+        <p>Don't miss any of your important events. Here are the events you have registered for:</p>
     </center>
     <hr>
 
-    <pr>
-        A photo event gallery is a curated collection of images capturing key moments and highlights of an event, serving as both a visual record and a promotional tool. It memorializes the event, showcasing major activities, candid interactions, and detailed shots of the venue and setup. These galleries engage attendees by featuring group photos and spontaneous moments, and they provide organizers with valuable documentation for future reference and evaluation. Whether shared online or displayed physically, a well-crafted photo event gallery tells a compelling story of the event, preserving memories and enhancing its impact for participants and viewers alike.
+    <!-- Event Gallery -->
+    <div class="event">
+        <h1>Photo Gallery Event</h1>
+        <img src="img/event1.png" alt="Photo Gallery Event">
+        <h2>Free Entry | Free Food | Pets Are Not Allowed</h2>
+        <p>A photo event gallery is a curated collection of images capturing key moments and highlights of an event...</p>
+    </div>
 
+    <!-- Fashion Store -->
+    <div class="event">
+        <img src="img/event2.png" alt="Fashion Store">
+        <h1><a href="https://www.myntra.com/" target="_blank">Fashion Store</a></h1>
+        <h2>Free Entry | Free Food | Pets Are Not Allowed</h2>
+        <p>A fashion store offers trendy clothing, accessories, and footwear to cater to diverse styles and preferences...</p>
+    </div>
 
-
-    </pr>
-    <center>
-
-    <img src="img/event1.png">
-    <h1>Photo Gallery Event</h1>
-    <h2>Free entry|Free Food|Pets Are not Allowed</h2>
- 
-    <pr>
-        A fashion store offers trendy clothing, accessories, and footwear. It caters to diverse styles and preferences, featuring the latest fashion trends and timeless pieces. Shoppers can find casual wear, formal attire, and unique fashion items, all curated to enhance personal style and express individuality.
-    </pr>
-    </center>
-    <center>
-        <img src="img/event2.png"><br>
-        <h1><a href="https://www.myntra.com/">Fashion Store</a></h1>
-        <h2>Free entry|Free Food|Pets Are not Allowed</h2>
-    <pr>
-        tore offers a wide variety of trendy clothing, accessories, and footwear to cater to diverse styles and preferences. Featuring the latest fashion trends and timeless pieces, it provides options for every occasion, from casual wear to formal attire. Shoppers can explore collections that include unique and statement pieces, allowing them to express their individuality and enhance their personal style. With a focus on quality and design, fashion stores aim to provide a satisfying shopping 
-    </pr>
     <hr>
-    <h1>Contact</h1>
-    <h2>+91 8825655110,+91 99436352199</h2>
 
-    </center>
-    </body>
-
+    <!-- Contact Information -->
+    <div class="contact">
+        <h1>Contact</h1>
+        <h2>+91 8825655110 | +91 99436352199</h2>
+    </div>
+</body>
 </html>
